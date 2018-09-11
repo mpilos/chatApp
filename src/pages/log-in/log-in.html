@@ -1,0 +1,35 @@
+<!--
+  Generated template for the LogInPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="secondary">
+    <ion-title>log-in</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="img">
+
+  <h1><img src="./assets/imgs/download.png"/></h1>
+
+  <ion-item id="rounded"style="background-color:transparent">
+    <ion-label stacked  style="color:white;">email</ion-label>
+    <ion-input [(ngModel)]="email" type="email" placeholder =" Your email Address"></ion-input>
+    <ion-icon ios="ios-mail-outline" item-left md="md-mail" style="color:white;"></ion-icon>
+  </ion-item>
+  <ion-item id="rounded"style="background-color:transparent">
+      <ion-label stacked style="color:white;">password</ion-label>
+    <ion-input [(ngModel)]="password" type="password" placeholder="your Password here"></ion-input>
+    <ion-icon ios="ios-lock-outline" item-left md="md-lock" style="color:white;"></ion-icon>
+  </ion-item>
+  <button ion-button round block (click)="signIn()"style="background-color:transparent">Sign in</button>
+
+  <button ion-button round block (click)="goToSignUp()"style="background-color:transparent">Create New Acount</button>
+  <button ion-button style="color:white;" block clear>I forgot my password</button>
+
+</ion-content>
